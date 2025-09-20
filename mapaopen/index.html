@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>México: Crímenes de Odio LGBTQ+ (2015-2022)</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/genai": "https://esm.sh/@google/genai@^0.7.0"
+        }
+      }
+    </script>
+    <script type="module" src="index.tsx"></script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root">
+      <header id="header">
+        <h1>México (2015-2022)</h1>
+        <h2>676 crímenes de odio contra personas LGBTQ+</h2>
+      </header>
+
+      <div id="controls-container">
+        <div id="controls">
+          <button id="most-violent-btn">El estado más violento</button>
+          <button id="explore-btn">Explora el mapa</button>
+        </div>
+      </div>
+
+      <div id="map">
+        <iframe
+          id="embed-map"
+          style="border: 0"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div id="caption" class="hidden">
+        <div id="caption-content">
+          <h3 id="caption-state"></h3>
+          <p id="caption-count"></p>
+          <p id="caption-story"></p>
+          <a href="#" id="story-link">Ver una historia</a>
+        </div>
+      </div>
+
+      <div id="modal" class="hidden">
+        <div id="modal-content">
+          <button id="modal-close-btn">&times;</button>
+          <p id="modal-story"></p>
+        </div>
+      </div>
+    </div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
